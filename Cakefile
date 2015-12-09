@@ -1,7 +1,7 @@
 require 'shortcake'
 
-require 'cake-version'
-require './'
+use 'cake-version'
+use './'
 
 option '-b', '--browser [browser]', 'browser to use for tests'
 option '-g', '--grep [filter]',     'test filter'
