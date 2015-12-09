@@ -7,10 +7,9 @@
     "test": "test"
   },
   "dependencies": {
-    "postmortem": "^0.2.4",
-    "shortcake": "^1.1.9"
   },
   "devDependencies": {
+    "cake-version": "^0.1.2",
     "chai": "^3.4.1",
     "chai-as-promised": "^5.1.0",
     "co-mocha": "^1.1.2",
