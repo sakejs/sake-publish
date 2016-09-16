@@ -1,18 +1,15 @@
 module.exports = (opts = {}) ->
-  opts.gitPush     ?= true
-  opts.gitPushTags ?= true
-  opts.npmPublish  ?= true
+  opts.git ?= true
+  opts.npm ?= true
 
   task 'publish', 'publish project', ->
     cmds = []
 
-    if opts.gitPush
+    if opts.git
       cmds.push 'git push'
-
-    if opts.gitPushTags
       cmds.push 'git push --tags'
 
-    if opts.npmPublish
+    if opts.npm
       cmds.push 'npm publish'
 
     exec.parallel cmds
