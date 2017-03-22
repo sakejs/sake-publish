@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "cake-bundle": "0.2.4",
-    "cake-outdated": "0.1.13",
+    "cake-outdated": "0.1.14",
     "cake-version": "^0.1.2",
     "chai": "^3.4.1",
     "chai-as-promised": "^6.0.0",
