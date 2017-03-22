@@ -1,6 +1,6 @@
 {
   "name": "cake-publish",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Publish projects to npm and GitHub",
   "main": "dist/lib.js",
   "module": "dist/lib.mjs",
