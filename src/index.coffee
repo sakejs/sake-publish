@@ -4,7 +4,14 @@ module.exports = (opts = {}) ->
   opts.npm    ?= true
 
   task 'publish', 'publish project', ->
-    cmds = []
+    if opts.npm
+      # npm publish should happen first as users may have prepublish scripts that should run
+      yield exec 'npm publish'
+
+    cmds = [
+      'git push'
+      'git push --tags'
+    ]
 
     if opts.git
       cmds.push 'git push'
@@ -14,7 +21,4 @@ module.exports = (opts = {}) ->
     if remote? and refspec?
       cmds.push "git push #{if force then '-f' else ''} #{remote} #{refspec}"
 
-    if opts.npm
-      cmds.push 'npm publish'
-
-    exec.parallel cmds
+    yield exec.parallel cmds
