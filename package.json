@@ -12,7 +12,9 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "executive": "1.2.5"
+  },
   "devDependencies": {
     "cake-bundle": "0.2.4",
     "cake-outdated": "0.1.13",
