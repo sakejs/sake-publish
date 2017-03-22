@@ -1,5 +1,7 @@
 require 'shortcake'
 
+use 'cake-bundle'
+use 'cake-outdated'
 use 'cake-version'
 use './'
 
@@ -12,7 +14,9 @@ task 'clean', 'clean project', ->
   exec 'rm -rf lib'
 
 task 'build', 'build project', ->
-  exec 'node_modules/.bin/coffee -bcm -o lib/ src/'
+  bundle.write
+    entry: 'src/index.coffee'
+    formats: ['cjs', 'es']
 
 task 'test', 'Run tests', (opts, cb) ->
   grep    = opts.grep             ? ''

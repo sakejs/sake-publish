@@ -1,13 +1,21 @@
 {
   "name": "cake-publish",
   "version": "0.1.5",
-  "description": "Use chai assertians in mocha tasks.",
-  "main": "lib/",
+  "description": "Publish projects to npm and GitHub",
+  "main": "dist/lib.js",
+  "module": "dist/lib.mjs",
+  "js:next": "dist/lib.mjs",
+  "files": [
+    "dist/",
+    "src/"
+  ],
   "directories": {
     "test": "test"
   },
   "dependencies": {},
   "devDependencies": {
+    "cake-bundle": "0.2.4",
+    "cake-outdated": "0.1.13",
     "cake-version": "^0.1.2",
     "chai": "^3.4.1",
     "chai-as-promised": "^5.1.0",
@@ -26,7 +34,7 @@
     "url": "git+https://github.com/zeekay/cake-publish.git"
   },
   "keywords": [],
-  "author": "Zach Kelling <zk@monoid.io> (http://zeekay.io)",
+  "author": "Zach Kelling <z@zeekay.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zeekay/cake-publish/issues"
