@@ -18,14 +18,14 @@
   "devDependencies": {
     "cake-bundle": "0.2.6",
     "cake-outdated": "0.1.14",
-    "cake-version": "^0.1.2",
+    "cake-version": "0.1.2",
     "chai": "^3.4.1",
-    "chai-as-promised": "^6.0.0",
-    "co-mocha": "^1.1.2",
-    "coffee-script": "^1.10.0",
-    "mocha": "^3.2.0",
-    "postmortem": "^0.2.3",
-    "shortcake": "^1.1.10"
+    "chai-as-promised": "6.0.0",
+    "co-mocha": "1.1.2",
+    "coffee-script": "1.10.0",
+    "mocha": "3.2.0",
+    "postmortem": "0.2.3",
+    "shortcake": "1.1.10"
   },
   "scripts": {
     "test": "cake test",
