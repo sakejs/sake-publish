@@ -1,3 +1,5 @@
+import exec from 'executive'
+
 module.exports = (opts = {}) ->
   opts.deploy ?= {}
   opts.git    ?= true
@@ -5,7 +7,9 @@ module.exports = (opts = {}) ->
 
   task 'publish', 'publish project', ->
     if opts.npm
-      # npm publish should happen first as users may have prepublish scripts that should run
+      # npm publish should happen first. Users may have prepublish scripts
+      # which might generate compiled output. We don't currently commit these
+      # changes, but we might later on.
       yield exec 'npm publish'
 
     cmds = [
