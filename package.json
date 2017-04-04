@@ -2,11 +2,11 @@
   "name": "cake-publish",
   "version": "0.1.10",
   "description": "Publish projects to npm and GitHub",
-  "main": "dist/lib.js",
-  "module": "dist/lib.mjs",
-  "js:next": "dist/lib.mjs",
+  "main": "lib/cake-publish.js",
+  "module": "lib/cake-publish.mjs",
+  "js:next": "lib/cake-publish.mjs",
   "files": [
-    "dist/",
+    "lib/",
     "src/"
   ],
   "directories": {
