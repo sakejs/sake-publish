@@ -1,7 +1,7 @@
 import exec from 'executive'
 
+
 module.exports = (opts = {}) ->
-  opts.deploy ?= {}
   opts.git    ?= true
   opts.npm    ?= true
 
@@ -11,11 +11,17 @@ module.exports = (opts = {}) ->
     if opts.npm
       cmds.push 'npm publish'
 
-    if opts.git
-      cmds = cmds.concat ['git push', 'git push --tags']
+    if opts.git? and opts.git != false
+      unless opts.git.tags == false
+        cmds.push 'git push --tags'
 
-    {force, remote, refspec} = opts.deploy
-    if remote? and refspec?
-      cmds.push "git push #{if force then '-f' else ''} #{remote} #{refspec}"
+      if opts.git == true
+        cmds.push 'git push'
+      else
+        {force, remote, refspec} = opts.git
+        if remote?
+          respec  = if refspec?      then refspec else ''
+          force   = if force == true then '-f'    else ''
+          cmds.push "git push #{force} #{remote} #{refspec}"
 
     exec.parallel cmds
