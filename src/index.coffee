@@ -1,9 +1,9 @@
 import exec from 'executive'
 
 
-module.exports = (opts = {}) ->
-  opts.git    ?= true
-  opts.npm    ?= true
+export default (opts = {}) ->
+  opts.git ?= true
+  opts.npm ?= true
 
   task 'publish', 'publish project', ->
     cmds = []
