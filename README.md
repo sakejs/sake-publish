@@ -1,31 +1,40 @@
-# cake-publish [![NPM publish][npm-img]][npm-url] [![Build Status][travis-img]][travis-url] [![Coverage Status][coveralls-img]][coveralls-url] [![Dependency Status][dependency-img]][dependency-url] [![Gitter chat][gitter-img]][gitter-url]
-Automatically publish project to git (with tags) and npm.
+# sake-publish
+
+[![npm][npm-img]][npm-url]
+[![build][build-img]][build-url]
+[![dependencies][dependencies-img]][dependencies-url]
+[![downloads][downloads-img]][downloads-url]
+[![license][license-img]][license-url]
+[![chat][chat-img]][chat-url]
+
+Add project publishing tasks to your Sakefile. Publish to npm, GitHub and more.
 
 ## Install
 ```bash
-$ npm install cake-publish
+$ npm install sake-publish --save-dev
 ```
 
 ## Usage
-```coffee
-require 'shortcake'
+In your Sakefile:
 
-use do require 'cake-publish`'
+```javascript
+use('sake-publish')
 ```
 
-[travis-img]:     https://img.shields.io/travis/zeekay/cake-publish.svg
-[travis-url]:     https://travis-ci.org/zeekay/cake-publish
-[coveralls-img]:  https://coveralls.io/repos/zeekay/cake-publish/badge.svg?branch=master&service=github
-[coveralls-url]:  https://coveralls.io/github/zeekay/cake-publish?branch=master
-[dependency-url]: https://david-dm.org/zeekay/cake-publish
-[dependency-img]: https://david-dm.org/zeekay/cake-publish.svg
-[npm-img]:        https://img.shields.io/npm/v/cake-publish.svg
-[npm-url]:        https://www.npmjs.com/package/cake-publish
-[gitter-img]:     https://badges.gitter.im/join-chat.svg
-[gitter-url]:     https://gitter.im/zeekay/hi
+## License
+[BSD][license-url]
 
-<!-- not used -->
-[downloads-img]:     https://img.shields.io/npm/dm/cake-publish.svg
-[downloads-url]:     http://badge.fury.io/js/cake-publish
-[devdependency-img]: https://david-dm.org/zeekay/cake-publish/dev-status.svg
-[devdependency-url]: https://david-dm.org/zeekay/cake-publish#info=devDependencies
+[build-img]:        https://img.shields.io/travis/sakejs/sake-publish.svg
+[build-url]:        https://travis-ci.org/sakejs/sake-publish
+[chat-img]:         https://badges.gitter.im/join-chat.svg
+[chat-url]:         https://gitter.im/sakejs/hi
+[coverage-img]:     https://coveralls.io/repos/sakejs/sake-publish/badge.svg?branch=master&service=github
+[coverage-url]:     https://coveralls.io/github/sakejs/sake-publish?branch=master
+[dependencies-img]: https://david-dm.org/sakejs/sake-publish.svg
+[dependencies-url]: https://david-dm.org/sakejs/sake-publish
+[downloads-img]:    https://img.shields.io/npm/dm/sake-publish.svg
+[downloads-url]:    http://badge.fury.io/js/sake-publish
+[license-img]:      https://img.shields.io/npm/l/sake-publish.svg
+[license-url]:      https://github.com/sakejs/sake-publish/blob/master/LICENSE
+[npm-img]:          https://img.shields.io/npm/v/sake-publish.svg
+[npm-url]:          https://www.npmjs.com/package/sake-publish
