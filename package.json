@@ -13,18 +13,18 @@
     "test": "test"
   },
   "dependencies": {
-    "executive": "1.2.5"
+    "executive": "1.2.7"
   },
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-as-promised": "6.0.0",
     "co-mocha": "1.2.0",
-    "coffee-script": "1.12.4",
+    "coffee-script": "1.12.5",
     "mocha": "3.2.0",
-    "postmortem": "0.2.4",
-    "sake-bundle": "0.4.0",
-    "sake-outdated": "0.1.14",
-    "sake-version": "0.1.11"
+    "postmortem": "0.2.6",
+    "sake-bundle": "0.4.2",
+    "sake-outdated": "0.1.18",
+    "sake-version": "0.1.16"
   },
   "scripts": {
     "test": "sake test",
