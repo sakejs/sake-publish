@@ -14,6 +14,8 @@
   },
   "devDependencies": {
     "sake-bundle": "0.4.10",
+    "sake-cli": "0.3.2",
+    "sake-core": "1.3.7",
     "sake-outdated": "0.1.19",
     "sake-test": "0.1.3",
     "sake-version": "0.1.17"
