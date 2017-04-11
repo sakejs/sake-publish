@@ -24,6 +24,7 @@
     "postmortem": "0.2.6",
     "sake-bundle": "0.4.2",
     "sake-outdated": "0.1.18",
+    "sake-test": "0.1.2",
     "sake-version": "0.1.16"
   },
   "scripts": {
