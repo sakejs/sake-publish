@@ -27,7 +27,7 @@ use('sake-publish')
 [build-img]:        https://img.shields.io/travis/sakejs/sake-publish.svg
 [build-url]:        https://travis-ci.org/sakejs/sake-publish
 [chat-img]:         https://badges.gitter.im/join-chat.svg
-[chat-url]:         https://gitter.im/sakejs/hi
+[chat-url]:         https://gitter.im/sakejs/chat
 [coverage-img]:     https://coveralls.io/repos/sakejs/sake-publish/badge.svg?branch=master&service=github
 [coverage-url]:     https://coveralls.io/github/sakejs/sake-publish?branch=master
 [dependencies-img]: https://david-dm.org/sakejs/sake-publish.svg
