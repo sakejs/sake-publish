@@ -1,6 +1,6 @@
 {
   "name": "sake-publish",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Publish projects to npm and GitHub",
   "main": "lib/sake-publish.js",
   "module": "lib/sake-publish.mjs",
