@@ -9,9 +9,6 @@
     "lib/",
     "src/"
   ],
-  "dependencies": {
-    "executive": "1.2.7"
-  },
   "devDependencies": {
     "coffee-script": "1.12.5",
     "sake-bundle": "0.4.11",
