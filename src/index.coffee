@@ -1,6 +1,3 @@
-import exec from 'executive'
-
-
 export default (opts = {}) ->
   opts.git ?= true
   opts.npm ?= true
